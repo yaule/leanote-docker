@@ -28,6 +28,8 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY supervisord /etc/supervisord
 RUN mkdir -p /var/log/supervisor/
+RUN sed -i '$d' /usr/local/leanote/bin/run.sh && bash -x /usr/local/leanote/bin/run.sh 
+
 
 EXPOSE 9000
 
