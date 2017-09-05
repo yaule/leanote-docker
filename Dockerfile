@@ -24,6 +24,7 @@ COPY app.conf /usr/local/leanote/conf/app.conf
 
 COPY init.sh /root/init.sh
 
+COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY supervisord /etc/supervisord
 RUN mkdir -p /var/log/supervisor/
