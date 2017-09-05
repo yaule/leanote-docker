@@ -4,7 +4,7 @@ WORKDIR /usr/local
 
 RUN yum install -y epel-release && \
     yum update -y && \
-    yum install -y wget libpng libjpeg openssl icu libX11 libXext libXrender xorg-x11-fonts-Type1 xorg-x11-fonts-75dpi python2-pip && \
+    yum install -y wget libpng libjpeg openssl icu libX11 libXext libXrender xorg-x11-fonts-Type1 xorg-x11-fonts-75dpi python2-pip nginx&& \
     pip install --upgrade pip && \
     pip install supervisor
 
